@@ -1,5 +1,5 @@
 """
-用于测试 class_.py 内函数
+用于测试 class_.py 内函数，运行 socket 客户端
 """
 import sys
 
