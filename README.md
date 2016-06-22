@@ -1,5 +1,6 @@
 ### **备忘录**
-    1.调试 my_py_class_.py
+    1. python 调用 dll 需 32bit 的 python
+    2. 64bit 的 mysql 需 64 bit 的 python
 
 ### **一、通过 clion 搭建 c++/python 混合编程 ide**
 >
