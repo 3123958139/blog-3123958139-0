@@ -1,0 +1,75 @@
+### **备忘录**
+    1.调试 my_py_class_.py
+
+### **一、通过 clion 搭建 c++/python 混合编程 ide**
+>
+> ##### *1. clion*
+>
+> * ide 环境
+>
+> ##### *2. tdmgcc*
+>
+> * c++ 编译器
+>
+> ##### *3. winpython*
+>
+> * python 科学计算环境
+>
+> ##### *4. mysql*
+>
+> * sql 数据库
+>
+> ##### *5. git*
+>
+> * git_hub 版本控制
+>
+
+### **二、个人编程习惯**
+>
+> ##### *1. 命名习惯：.cpp*
+>   * aaa_bbb_ccc_
+>
+>   * aaa_bbb_ccc_1, aaa_bbb_ccc_2
+>
+> ##### *2. 编写习惯：.md*
+>
+>   * 段落开始前前面空一行
+>
+>   * 一条语句后面空一行
+>
+
+### **三、创建工程**
+>
+> ##### *1. CMakeLists.txt*
+>
+> ##### *2. my_cpp_dll_.h*
+>
+> ##### *3. my_cpp_dll_.cpp*
+>
+> * 以上三个用于创建 c++ dll 封装那些对计算性能要求高的函数，如
+>
+>   `1. w_ma_：计算加权平均值`
+>
+> ##### *4. my_py_class_.py*
+>
+> * 封装那些需要重复调用的 py 代码，如
+>
+>   `1. get_url_data_：从 tushare 下载数据`
+>
+>   `2. get_sql_data_：调用 mysql 本地数据`
+>
+>   `3. run_socket_server_：建立 socket 服务器`
+>
+>   `4. run_socket_client_：建立 socket 客户端`
+>
+>   `5. use_cpp_dll_：调用 c++ 动态链接库`
+>
+> ##### *5. test_py_1.py*
+>
+> ##### *6. test_py_2.py*
+>
+> ##### *7. test_py_3.py*
+>
+> * 以上三个用于测试代码
+>
+
