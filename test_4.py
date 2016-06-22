@@ -4,6 +4,8 @@
 import sys
 from ctypes import *
 
+import pandas
+
 import class_
 
 # 模块初始化
@@ -22,3 +24,10 @@ array_len_ = open_len_
 
 # 调用函数2
 h_dll_.w_ma_(array_, array_len_, 5)
+
+# 把结果存入数据库
+csv_file_ = pandas.read_csv('c:\\w_ma_.csv')
+csv_file_ = csv_file_.drop(['Unnamed: 3'], axis=1)
+csv_file_ = pandas.DataFrame(csv_file_)
+csv_file_.to_sql('csv_file_', class_.engine_)
+print(csv_file_)
