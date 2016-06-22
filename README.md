@@ -1,10 +1,10 @@
-### **备忘录**
+### 备忘录
 
     1. python 调用 dll 需 32bit 的 python
 
     2. 64bit 的 mysql 需 64bit 的 python
 
-### **一、通过 clion 搭建 c++/python 混合编程 ide**
+### 一、通过 clion 搭建 c++/python 混合编程 ide
 
     1. clion
         * ide 环境
@@ -21,7 +21,7 @@
     5. git
         * git_hub 版本控制
 
-### **二、个人编程习惯**
+### 二、个人编程习惯
 
     1. 命名习惯：.cpp
         * aaa_bbb_ccc_
@@ -31,7 +31,7 @@
         * 段落开始前前面空一行
         * 一条语句后面空一行
 
-### **三、创建工程**
+### 三、创建工程
 
     1. CMakeLists.txt
     2. my_cpp_dll_.h
