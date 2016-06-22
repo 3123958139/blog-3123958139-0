@@ -42,7 +42,7 @@ IO_DLL_ int w_ma_(double array_[], int array_len_, int n_) {
                     for (int i = m_ - n_, j = 0; i < m_; i++, j++) {
 
                         // j 为权重，我的想法是根据数理统计得到一个权重序列再加权
-                        temp += array_[i] * j;
+                        temp += array_[i];
                     }
                     w_ma_[m_ - 1] = temp / n_;
                     m_++;
