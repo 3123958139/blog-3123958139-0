@@ -65,7 +65,7 @@ IO_DLL_ int w_ma_(double array_[], int array_len_, int n_) {
         cout << "开始写入..." << endl;
 
         // 列名
-        f_w_ma_ << "index_" << "," << "price_" << "," << "w_ma_" << "," << endl;
+        f_w_ma_ << "index" << "," << "price" << "," << "wma" << "," << endl;
         for (int i = 0; i < array_len_; i++) {
             f_w_ma_ << i << "," << array_[i] << "," << w_ma_[i] << "," << endl;
         }
