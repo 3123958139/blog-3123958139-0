@@ -6,7 +6,7 @@ import sys
 import class_
 
 # 模块初始化
-sys.path.append('D:\\360data\\Clion2016.1.3')
+sys.path.append('D:\\360data\\blog-3123958139')
 class_ = class_.myPyClass_()
 
 # 运行 socket client
