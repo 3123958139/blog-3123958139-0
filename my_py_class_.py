@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 import ctypes
 import os
-import pandas
 import socket
-import sqlalchemy
 import struct
+
+import pandas
+import sqlalchemy
 import tushare
 
 
@@ -92,6 +93,6 @@ class myPyClass_:
         return code_.decode('utf-8'), i_, o_, h_, l_, c_, v_
 
     def use_cpp_dll_(self,
-                     path_='C:\\Users\\Perelman\\.CLion2016.1\\system\\cmake\\generated\\Clion2016_1_3-b7a95f5f\\b7a95f5f\\Debug\\libmy_cpp_dll_.dll'):
+                     path_='C:\\Users\\Perelman\\.CLion2016.1\\system\\cmake\\generated\\blog-3123958139-44930d3a\\44930d3a\\Debug\\libmy_cpp_dll_.dll'):
         h_dll_ = ctypes.CDLL(path_)
         return h_dll_
