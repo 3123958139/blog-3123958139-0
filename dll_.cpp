@@ -1,7 +1,7 @@
 // 标志为导出
 #define BUILD_MY_CPP_DLL_
 
-#include "my_cpp_dll_.h"
+#include "dll_.h"
 #include <iostream>
 #include <fstream>
 
