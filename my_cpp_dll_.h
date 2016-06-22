@@ -5,7 +5,7 @@
 #define MY_CPP_DLL__H_
 #endif
 
-// 导入导出宏名
+// 导入导出宏定义
 #ifdef BUILD_MY_CPP_DLL_
 #define IO_MY_CPP_DLL_ __declspec(export)
 #else
