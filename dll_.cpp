@@ -1,19 +1,19 @@
 // 标志为导出
-#define BUILD_MY_CPP_DLL_
+#define BUILD_DLL_
 
-#include "my_cpp_dll_.h"
+#include "dll_.h"
 #include <iostream>
 #include <fstream>
 
 using namespace std;
 
-IO_MY_CPP_DLL_ void hello_(void) {
+IO_DLL_ void hello_(void) {
     cout << "函数调用方法如下：" << endl;
     cout << "调用函数@0：void hello_(void)" << endl;
     cout << "调用函数@1：int w_ma_(double array_[], int array_len_, int n_)" << endl;
 }
 
-IO_MY_CPP_DLL_ int w_ma_(double array_[], int array_len_, int n_) {
+IO_DLL_ int w_ma_(double array_[], int array_len_, int n_) {
     cout << "调用函数@1：int w_ma_(double array_[], int array_len_, int n_)" << endl;
     cout << "开始计算..." << endl;
     int m_ = n_;

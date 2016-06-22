@@ -3,11 +3,11 @@
 """
 import sys
 
-import my_py_class_
+import class_
 
 # 模块初始化
 sys.path.append('D:\\360data\\Clion2016.1.3')
-class_ = my_py_class_.myPyClass_()
+class_ = class_.myPyClass_()
 
 # 运行 socket client
 while True:

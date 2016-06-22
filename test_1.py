@@ -3,14 +3,15 @@
 """
 # -*- coding: utf-8 -*-
 import sys
-import tushare
 from ctypes import *
 
-import my_py_class_
+import tushare
+
+import class_
 
 # 加载模块
 sys.path.append('D:\\360data\\Clion2016.1.3')
-h_dll_ = my_py_class_.myPyClass_().use_cpp_dll_()
+h_dll_ = class_.myPyClass_().use_cpp_dll_()
 
 # 调用函数1
 h_dll_.hello_()
