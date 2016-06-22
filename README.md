@@ -48,6 +48,12 @@
         * import_dll_：导入动态链接库
 
     5. test_1.py
+        * 用于测试 dll 函数
+
     6. test_2.py
+        * 用于下载 tushare.org 数据
+        * 用于调用 mysql 数据
+        * 用于运行 socket 服务器
+
     7. test_3.py
-        * 以上三个用于测试代码
+        * 用于运行 socket 客户端
