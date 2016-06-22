@@ -1,5 +1,5 @@
 """
-用于测试 my_cpp_dll_.dll 内函数
+用于测试 .dll 函数
 """
 # -*- coding: utf-8 -*-
 import sys
@@ -11,7 +11,7 @@ import class_
 
 # 加载模块
 sys.path.append('D:\\360data\\blog-3123958139')
-h_dll_ = class_.myPyClass_().use_cpp_dll_()
+h_dll_ = class_.class_().import_dll_()
 
 # 调用函数1
 h_dll_.hello_()

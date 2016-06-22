@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="test_3" type="PythonConfigurationType" factoryName="Python" singleton="true">
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <envs>
+      <env name="PYTHONUNBUFFERED" value="1" />
+    </envs>
+    <option name="SDK_HOME" value="D:\0_Cpp_Matlab_SqlServer\Clion\WinPython-64bit-3.5.1.3\python-3.5.1.amd64\pythonw.exe" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <option name="IS_MODULE_SDK" value="false" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <module name="blog-3123958139" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_3.py" />
+    <option name="PARAMETERS" value="" />
+    <option name="SHOW_COMMAND_LINE" value="true" />
+    <method />
+  </configuration>
+</component>
