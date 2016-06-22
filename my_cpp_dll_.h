@@ -1,4 +1,4 @@
-// 只运行一次
+// 预编译只运行一次
 #pragma once
 
 #ifndef MY_CPP_DLL__H_
