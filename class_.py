@@ -58,7 +58,7 @@ class class_:
                                index_label='index')
             self.engine_.connect().execute('alter table testdb.' + code_list_['code'][i] + ' add primary key(`index`)')
 
-    def get_sql_data_(self, code_='000886'):
+    def get_sql_data_(self, code_='000016'):
 
         # 取 mysql 数据
         stock_data_ = pandas.read_sql_table(code_, self.engine_)
