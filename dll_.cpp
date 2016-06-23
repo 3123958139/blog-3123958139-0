@@ -77,3 +77,15 @@ IO_DLL_ int w_ma_(double array_[], int array_len_, int n_) {
         return 1;
     }
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+IO_DLL_ int w_rate_ma_(char *stock_date_[],
+                       double stock_open_[],
+                       double stock_high_[],
+                       double stock_low_[],
+                       double stock_close[],
+                       double stock_volume[],
+                       int stock_len_,
+                       int ma_len_) {
+    return 0;
+}
