@@ -4,6 +4,23 @@
 
     2. 64bit 的 mysql 需 64bit 的 python
 
+    3. 量化交易策略
+        * 输入数据 - 只取最原始可靠的，如
+        * date
+        * open
+        * high
+        * low
+        * close
+        * volume
+        * 输出数据 - 根据数理统计取权重，把 o, h, l, c 四价合一，如
+        * w_price_ = o * ? + h * ? + l * ? + c * ?
+        * w_price_ma_ = (w_price[0] * ? + ...) / ?
+        * 数据比率 - 只用比率不用市价
+        * w_rate_[i] = w_price_[i] / w_price_[i - 1]
+        * w_rate_ma_ = (w_rate_[0] * ? + ...) / ?
+        * 画出上图 - 把大盘指数，板块指数，个股权价叠加在同一图表内
+        * 画出下图 - 把大盘涨跌幅，板块涨跌幅，个股涨跌幅叠加
+
 ### 一、通过 clion 搭建 c++/python 混合编程 ide
 
     1. clion
