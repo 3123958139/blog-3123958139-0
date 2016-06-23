@@ -94,6 +94,7 @@ IO_DLL_ int w_rate_ma_(// char *stock_date_[],
         w_price_[i] = stock_open_[i] * 2 + stock_high_[i]
                       + stock_low_[i]
                       + stock_close_[i] * 3;
+        w_price_[i] = w_price_[i] / 7;
     }
 
     // 计算涨跌幅
