@@ -22,12 +22,12 @@ IO_DLL_ void hello_(void);
 IO_DLL_ int w_ma_(double array_[], int array_len_, int n_);
 ///////////////////////////////////////////////////////////////////////////////////////////////
 // 该函数用于加载 open，high，low，close 数组
-IO_DLL_ int w_rate_ma_(char *stock_date_[],
+IO_DLL_ int w_rate_ma_(// char *stock_date_[],
                        double stock_open_[],
                        double stock_high_[],
                        double stock_low_[],
-                       double stock_close[],
-                       double stock_volume[],
+                       double stock_close_[],
+        // double stock_volume[],
                        int stock_len_,
                        int ma_len_);
 }
