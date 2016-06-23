@@ -52,7 +52,7 @@ IO_DLL_ int w_ma_(double array_[], int array_len_, int n_) {
         }
     }
     else {
-        cout << "长度错误..." << endl;
+        cout << "长度为零错误..." << endl;
         return -1;
     }
     cout << "新建文件..." << endl;

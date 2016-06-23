@@ -1,8 +1,8 @@
 """
 用于测试 class_.py 内函数，运行 socket 客户端
 """
-import sys
 
+import sys
 import class_
 
 # 模块初始化

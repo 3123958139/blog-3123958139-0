@@ -1,13 +1,12 @@
 """
 用于测试 class_.py 内函数
 """
+
 import sys
-from ctypes import *
-
-import matplotlib.pyplot as pyplot
-import pandas
-
 import class_
+from ctypes import *
+import pandas
+import matplotlib.pyplot as pyplot
 
 # 模块初始化
 sys.path.append('D:\\360data\\blog-3123958139')
@@ -31,7 +30,6 @@ csv_file_ = pandas.read_csv('c:\\w_ma_.csv')
 csv_file_ = csv_file_.drop(['Unnamed: 3'], axis=1)
 csv_file_ = pandas.DataFrame(csv_file_)
 csv_file_.to_sql(code_ + '_wma_', class_.engine_, if_exists='replace', index=True, index_label='index')
-print(csv_file_)
 
 # 画个图看看
 pyplot.plot(csv_file_['price'])

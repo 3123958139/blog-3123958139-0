@@ -1,15 +1,14 @@
 """
-用于测试 .dll 函数
+用于测试 libdll_.dll 函数
 """
+
 # -*- coding: utf-8 -*-
 import sys
+import class_
+import tushare
 from ctypes import *
 
-import tushare
-
-import class_
-
-# 加载模块
+# 加载模块，获得 dll 句柄
 sys.path.append('D:\\360data\\blog-3123958139')
 h_dll_ = class_.class_().import_dll_()
 
