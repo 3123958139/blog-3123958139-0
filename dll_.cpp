@@ -29,6 +29,7 @@ IO_DLL_ int w_ma_(double array_[], int array_len_, int n_) {
                 for (int i = 0; i < m_; i++) {
                     w_ma_[i] = 0;
                 }
+                cout << "计算完毕..." << endl;
                 break;
             }
             default: {
@@ -47,6 +48,7 @@ IO_DLL_ int w_ma_(double array_[], int array_len_, int n_) {
                     w_ma_[m_ - 1] = temp / n_;
                     m_++;
                 }
+                cout << "计算完毕..." << endl;
                 break;
             }
         }
