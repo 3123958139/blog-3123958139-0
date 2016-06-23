@@ -14,7 +14,7 @@ IO_DLL_ void hello_(void) {
 }
 
 IO_DLL_ int w_ma_(double array_[], int array_len_, int n_) {
-    cout << "调用函数...@1：int w_ma_(double array_[], int array_len_, int n_)" << endl;
+    cout << "调用函数..@1：int w_ma_(double array_[], int array_len_, int n_)" << endl;
     cout << "开始计算..." << endl;
 
     // 后面长度会移动，先保存为常量
