@@ -27,6 +27,16 @@ class class_:
 
     def get_url_data_(self):
 
+        # 下载上证指数数据
+        sh_ = tushare.get_hist_data('sh')
+        sh_['index'] = pandas.DataFrame([i for i in range(0, len(sh_))], sh_.index)
+        sh_.to_sql('sh_', self.engine_, if_exists='replace', index=True, index_label='index')
+
+        # 下载深圳综指数据
+        sz_ = tushare.get_hist_data('sz')
+        sz_['index'] = pandas.DataFrame([i for i in range(0, len(sz_))], sz_.index)
+        sz_.to_sql('sz_', self.engine_, if_exists='replace', index=True, index_label='index')
+
         # 从 tushare.org 获取股票市场的代码列表
         code_list_ = pandas.DataFrame((tushare.get_today_all())['code'])
 
