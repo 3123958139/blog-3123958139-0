@@ -60,7 +60,7 @@ IO_DLL_ int w_price_rate_ma_(
     }
     while (n_ <= stock_len_) {
         double temp = 0;
-        for (int i = n_ - ma_len_; i < ma_len_; ++i) {
+        for (int i = n_ - ma_len_; i < n_; ++i) {
             temp += w_price_rate_[i];
         }
         w_price_rate_ma_[n_ - 1] = temp / ma_len_;
@@ -79,8 +79,8 @@ IO_DLL_ int w_price_rate_ma_(
     << "close" << ","
     << "volume" << ","
     << "w_price_" << ","
-    << "w_rate_" << ","
-    << "w_rate_ma_" << "," << endl;
+    << "w_price_rate_" << ","
+    << "w_price_rate_ma_" << "," << endl;
     for (int i = 0; i < stock_len_; i++) {
         f_w_price_rate_ma_
         << i << ","

@@ -23,7 +23,7 @@ stock_low_ = data_frame['low'].values
 stock_close_ = data_frame['close'].values
 
 stock_len_ = len(stock_open_)
-ma_len_ = 5
+ma_len_ = 2
 
 # 数据格式转换
 stock_open_ = (c_double * stock_len_)(*stock_open_)
