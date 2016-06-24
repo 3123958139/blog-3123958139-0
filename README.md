@@ -65,13 +65,14 @@
         * run_socket_client_：建立 socket 客户端
         * import_dll_：导入动态链接库
 
-    5. test_1.py
-        * 用于测试 dll 函数
+    5. test_dll_w_price_rate_ma_.py
+        * 用于测试 dll 中的 w_price_rate_ma_ 函数
 
-    6. test_2.py
-        * 用于下载 tushare.org 数据
-        * 用于调用 mysql 数据
+    6. test_class_run_socket_server.py
         * 用于运行 socket 服务器
 
-    7. test_3.py
+    7. test_class_run_socket_client.py
         * 用于运行 socket 客户端
+
+    8. test_.py
+        * 测试其他

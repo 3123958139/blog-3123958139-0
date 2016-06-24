@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="test_4" type="PythonConfigurationType" factoryName="Python" singleton="true">
+  <configuration default="false" name="test_class_run_socket_client.py" type="PythonConfigurationType" factoryName="Python" singleton="true">
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
     <envs>
@@ -11,7 +11,7 @@
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
     <module name="blog-3123958139" />
-    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_4.py" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_class_run_socket_client.py" />
     <option name="PARAMETERS" value="" />
     <option name="SHOW_COMMAND_LINE" value="true" />
     <method />
