@@ -32,4 +32,4 @@ stock_low_ = (c_double * stock_len_)(*stock_low_)
 stock_close_ = (c_double * stock_len_)(*stock_close_)
 
 # 调用函数2
-h_dll_.w_rate_ma_(stock_open_, stock_high_, stock_low_, stock_close_, stock_len_, ma_len_)
+h_dll_.w_price_rate_ma_(stock_open_, stock_high_, stock_low_, stock_close_, stock_len_, ma_len_)
