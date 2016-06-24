@@ -10,34 +10,33 @@ using namespace std;
 IO_DLL_ void hello_(void) {
     cout << "函数调用方法如下：" << endl;
     cout << "函数格式@0：void hello_(void)" << endl;
-    cout << "函数格式@1：int w_price_rate_ma_(// double stock_index_[], \n"
+    cout << "函数格式@1：int w_price_rate_ma_(double stock_index_[], \n"
             "                                 // char *stock_date_[], \n"
             "                                 double stock_open_[], \n"
             "                                 double stock_high_[], \n"
             "                                 double stock_low_[], \n"
             "                                 double stock_close_[], \n"
-            "                                 // double stock_volume[], \n"
+            "                                 double stock_volume[], \n"
             "                                 int stock_len_, \n"
             "                                 int ma_len_)" << endl;
 }
 
-IO_DLL_ int w_price_rate_ma_(
-        // double stock_index_[],
+IO_DLL_ int w_price_rate_ma_(double stock_index_[],
         // char *stock_date_[],
-                       double stock_open_[],
-                       double stock_high_[],
-                       double stock_low_[],
-                       double stock_close_[],
-        // double stock_volume[],
-                       int stock_len_,
-                       int ma_len_) {
-    cout << "调用函数@1：int w_price_rate_ma_(// double stock_index_[], \n"
+                             double stock_open_[],
+                             double stock_high_[],
+                             double stock_low_[],
+                             double stock_close_[],
+                             double stock_volume_[],
+                             int stock_len_,
+                             int ma_len_) {
+    cout << "调用函数@1：int w_price_rate_ma_(double stock_index_[], \n"
             "                                 // char *stock_date_[], \n"
             "                                 double stock_open_[], \n"
             "                                 double stock_high_[], \n"
             "                                 double stock_low_[], \n"
             "                                 double stock_close_[], \n"
-            "                                 // double stock_volume[], \n"
+            "                                 double stock_volume_[], \n"
             "                                 int stock_len_, \n"
             "                                 int ma_len_)" << endl;
 
@@ -92,13 +91,13 @@ IO_DLL_ int w_price_rate_ma_(
     << "w_price_rate_ma_" << "," << endl;
     for (int i = 0; i < stock_len_; i++) {
         f_w_price_rate_ma_
-        << i << ","
-        << 0 << ","
+        << stock_index_[i] << ","
+        << "NULL" << ","
         << stock_open_[i] << ","
         << stock_high_[i] << ","
         << stock_low_[i] << ","
         << stock_close_[i] << ","
-        << 0 << ","
+        << stock_volume_ << ","
         << w_price_[i] << ","
         << w_price_rate_[i] << ","
         << w_price_rate_ma_[i] << "," << endl;
