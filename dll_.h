@@ -12,17 +12,15 @@
 #define IO_DLL_ __declspec(import)
 #endif
 
-// 导出函数为标准 c 格式
+// 导出函数为标准 c 格式，确保导出函数名不改变
 extern "C" {
 
 // 该函数用于声明函数调用方法
 IO_DLL_ void hello_(void);
 
-// 该函数用于计算加权平均值
-IO_DLL_ int w_ma_(double array_[], int array_len_, int n_);
-///////////////////////////////////////////////////////////////////////////////////////////////
-// 该函数用于加载 open，high，low，close 数组
-IO_DLL_ int w_rate_ma_(// char *stock_date_[],
+// 该函数综合计算 ma 值
+IO_DLL_ int w_rate_ma_(// double stock_index_[],
+        // char *stock_date_[],
                        double stock_open_[],
                        double stock_high_[],
                        double stock_low_[],
