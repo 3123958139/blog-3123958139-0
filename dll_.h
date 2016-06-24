@@ -19,7 +19,8 @@ extern "C" {
 IO_DLL_ void hello_(void);
 
 // 该函数综合计算 ma 值
-IO_DLL_ int w_rate_ma_(// double stock_index_[],
+IO_DLL_ int w_rate_ma_(
+// double stock_index_[],
         // char *stock_date_[],
                        double stock_open_[],
                        double stock_high_[],
