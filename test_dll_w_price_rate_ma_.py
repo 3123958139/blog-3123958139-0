@@ -6,6 +6,8 @@
 import sys
 import class_
 import tushare
+import pandas
+import matplotlib.pyplot as pyplot
 from ctypes import *
 
 # 加载模块，获得 dll 句柄
@@ -48,3 +50,12 @@ h_dll_.w_price_rate_ma_(stock_index_,
                         stock_volume_,
                         stock_len_,
                         ma_len_)
+
+# 读取 csv 文件
+f_csv_ = pandas.read_csv('c:\\w_price_rate_ma_.csv')
+f_csv_ = f_csv_.drop(['Unnamed: 10'], axis=1)
+
+# 画个图
+pyplot.plot(f_csv_['w_price_rate_'])
+pyplot.plot(f_csv_['w_price_rate_ma_'])
+pyplot.show()
