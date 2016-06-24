@@ -6,18 +6,20 @@
 
     3. 量化交易策略
         * 输入数据 - 只取最原始可靠的，如
+        * index
         * date
         * open
         * high
         * low
         * close
         * volume
-        * 输出数据 - 根据数理统计取权重，把 o, h, l, c 四价合一，如
-        * w_price_ = o * ? + h * ? + l * ? + c * ?
-        * w_price_ma_ = (w_price[0] * ? + ...) / ?
-        * 数据比率 - 只用比率不用市价
-        * w_rate_[i] = w_price_[i] / w_price_[i - 1]
-        * w_rate_ma_ = (w_rate_[0] * ? + ...) / ?
+        * 输出数据 - 根据数理统计取权重，如
+        * w_price_ = open * 2 + high * 1 + low * 1 + close * 3
+        * w_price_ = w_price_ / 7
+        * w_price_rate_[0] = 0
+        * w_price_rate_[i] = w_price_[i] / w_price_[i - 1]
+        * w_price_rate_ma_[0], ..., w_price_rate_ma_[i - 2] = 0
+        * w_price_rate_ma_[i - 1] = (w_price_rate[0] * ? + ...) / ?
         * 画出上图 - 把大盘指数，板块指数，个股权价叠加在同一图表内
         * 画出下图 - 把大盘涨跌幅，板块涨跌幅，个股涨跌幅叠加
 
