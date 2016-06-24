@@ -10,19 +10,20 @@ using namespace std;
 IO_DLL_ void hello_(void) {
     cout << "函数调用方法如下：" << endl;
     cout << "函数格式@0：void hello_(void)" << endl;
-    cout << "函数格式@1：int w_rate_ma_(// double stock_index_[], \n"
-            "                                  // char *stock_date_[], \n"
-            "                                  double stock_open_[], \n"
-            "                                  double stock_high_[], \n"
-            "                                  double stock_low_[], \n"
-            "                                  double stock_close_[], \n"
-            "                                  // double stock_volume[], \n"
-            "                                  int stock_len_, \n"
-            "                                  int ma_len_)" << endl;
+    cout << "函数格式@1：int w_rate_ma_("
+            "                           // double stock_index_[], \n"
+            "                           // char *stock_date_[], \n"
+            "                           double stock_open_[], \n"
+            "                           double stock_high_[], \n"
+            "                           double stock_low_[], \n"
+            "                           double stock_close_[], \n"
+            "                           // double stock_volume[], \n"
+            "                           int stock_len_, \n"
+            "                           int ma_len_)" << endl;
 }
 
 IO_DLL_ int w_rate_ma_(
-// double stock_index_[],
+        // double stock_index_[],
         // char *stock_date_[],
                        double stock_open_[],
                        double stock_high_[],
