@@ -31,6 +31,15 @@ IO_DLL_ int w_price_rate_ma_(
         // double stock_volume[],
                        int stock_len_,
                        int ma_len_) {
+    cout << "调用函数@1：int w_price_rate_ma_(// double stock_index_[], \n"
+            "                                 // char *stock_date_[], \n"
+            "                                 double stock_open_[], \n"
+            "                                 double stock_high_[], \n"
+            "                                 double stock_low_[], \n"
+            "                                 double stock_close_[], \n"
+            "                                 // double stock_volume[], \n"
+            "                                 int stock_len_, \n"
+            "                                 int ma_len_)" << endl;
 
     // 计算加权价
     cout << "计算 w_price_ ..." << endl;
